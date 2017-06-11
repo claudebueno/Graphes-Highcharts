@@ -7,6 +7,8 @@
     <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <script src='https://code.jquery.com/jquery-3.2.1.js'></script>
     <script src='http://code.highcharts.com/highcharts.js'></script>
+    <!--3D-->
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Oswald');
 
@@ -43,7 +45,7 @@
     <div class="container-fluid">
 
         <h1>Créer des graphes avec Highcharts</h1>
-        <h2>Graphique en secteurs</h2>
+        <h2>Graphique en secteurs 3D</h2>
 
         <div class="row">
             <div class="col-md-12">
@@ -71,7 +73,12 @@
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false,
-                    type: 'pie'
+                    type: 'pie',
+                    options3d: {
+                        enabled: true,
+                        alpha: 45,
+                        beta: 0
+                    }
                 },
                 title: {
                     text: 'Navigateurs dans le monde et en Europe (mai 2017)'
@@ -80,6 +87,7 @@
                     pie: {
                         allowPointSelect: true,
                         cursor: 'pointer',
+                        depth: 35,
                         dataLabels: {
                             enabled: true
                         },
