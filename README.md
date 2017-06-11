@@ -1,6 +1,6 @@
 # Créer des graphiques avec Highcharts.js
 
-[Highcharts](https://www.highcharts.com/) makes it easy for developers to set up interactive charts in their web pages
+[Highcharts](https://www.highcharts.com/) rend facile aux développeurs de créer des graphiques interactifs dans leurs pages Web.
 
 ## Chart Pie
 
